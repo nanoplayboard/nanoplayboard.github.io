@@ -31,13 +31,21 @@ Dispone de varios sensores, actuadores y puertos para la conexión con otras pla
 
 ---
 
+## Open Source Hardware
+
+La placa **Arduino Nano Play Board** es **[Hardware de Fuentes Abiertas (OSHW)][3]**, lo que quiere decir que su [diseño está disponible públicamente en GitHub][2] para que cualquier persona lo pueda estudiar, modificar, distribuir, materializar y vender, tanto el original como otros objetos basados en ese diseño.
+
+![](resources/images/cara_inferior_new.png){: .center}
+
+---
+
 ## Librería para la **Arduino NanoPlayBoard**
 
 Hemos desarrollado una **librería para facilitar el uso y el acceso a los recursos** que ofrece la placa.
 
 ### Instalación
 
-* [Descarga la librería **NanoPlayBoard.zip**][2].
+* [Descarga la librería **NanoPlayBoard.zip**][4].
 * Abre **Arduino IDE** y selecciona `Programa > Incluir Librería > Añadir librería .ZIP`.
 * Reinicia **Arduino IDE**.
 * Ahora puedes acceder a los ejemplos en el menú `Archivo > Ejemplos > NanoPlayBoard`.
@@ -88,5 +96,17 @@ board.ledmatrix.setScrollSpeed(10);
 board.ledmatrix.print("H o l a  m u n d o!");
 {% endhighlight %}
 
-[1]: https://www.arduino.cc/en/Main/ArduinoBoardNano
-[2]: https://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases
+---
+
+## Créditos
+
+* La placa [Arduino Nano Play Board][2] ha sido diseñada por [Antonio Morales][6].
+* La [librería para Arduino][5] ha sido desarrollada por [Antonio Morales][6] y [José Juan Sánchez][7].
+
+[1]: http://www.arduino.cc/en/Main/ArduinoBoardNano
+[2]: http://github.com/AntonioMR/Nano-Play-Board
+[3]: http://www.oshwa.org/definition/spanish/
+[4]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases
+[5]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library
+[6]: http://twitter.com/antonio1010mr
+[7]: http://josejuansanchez.org
