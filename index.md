@@ -3,7 +3,7 @@ layout: default
 title: {{ site.name }}
 ---
 
-![](resources/cara_superior.png){: .center}
+![](resources/images/completa_cara_superior.png){: .center}
 
 ## ¿Qué es la **Arduino NanoPlayBoard**?
 
@@ -41,6 +41,8 @@ Hemos desarrollado una **librería para facilitar el uso y el acceso a los recur
 * Abre **Arduino IDE** y selecciona `Programa > Incluir Librería > Añadir librería .ZIP`.
 * Reinicia **Arduino IDE**.
 * Ahora puedes acceder a los ejemplos en el menú `Archivo > Ejemplos > NanoPlayBoard`.
+
+![](resources/images/library_examples.png){: .center}
 
 ### Primeros pasos
 
