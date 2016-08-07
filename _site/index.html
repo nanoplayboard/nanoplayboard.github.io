@@ -54,6 +54,53 @@
   <li>Un <strong>zócalo hembra</strong> para conectar un <strong>módulo Bluetooth HC-05/HC-6</strong>.</li>
 </ul>
 
+<hr />
+
+<h2 id="librera-para-la-arduino-nanoplayboard">Librería para la <strong>Arduino NanoPlayBoard</strong></h2>
+
+<p>Hemos desarrollado una <strong>librería para facilitar el uso y el acceso a los recursos</strong> que ofrece la placa.</p>
+
+<h3 id="instalacin">Instalación</h3>
+
+<ul>
+  <li><a href="https://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases">Descarga la librería <strong>NanoPlayBoard.zip</strong></a>.</li>
+  <li>Abre <strong>Arduino IDE</strong> y selecciona <code>Programa &gt; Incluir Librería &gt; Añadir librería .ZIP</code>.</li>
+  <li>Reinicia <strong>Arduino IDE</strong>.</li>
+  <li>Ahora puedes acceder a los ejemplos en el menú <code>Archivo &gt; Ejemplos &gt; NanoPlayBoard</code>.</li>
+</ul>
+
+<h3 id="primeros-pasos">Primeros pasos</h3>
+
+<h4 id="potentiometer">Potentiometer</h4>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">NanoPlayBoard</span> <span class="n">board</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">board</span><span class="p">.</span><span class="n">potentiometer</span><span class="p">.</span><span class="n">read</span><span class="p">();</span></code></pre></div>
+
+<h4 id="ldr">LDR</h4>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">NanoPlayBoard</span> <span class="n">board</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">board</span><span class="p">.</span><span class="n">ldr</span><span class="p">.</span><span class="n">read</span><span class="p">();</span></code></pre></div>
+
+<h4 id="buzzer">Buzzer</h4>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">NanoPlayBoard</span> <span class="n">board</span><span class="p">;</span>
+<span class="n">board</span><span class="p">.</span><span class="n">buzzer</span><span class="p">.</span><span class="n">playTone</span><span class="p">(</span><span class="mi">440</span><span class="p">);</span></code></pre></div>
+
+<h4 id="led-rgb">LED RGB</h4>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">NanoPlayBoard</span> <span class="n">board</span><span class="p">;</span>
+<span class="n">board</span><span class="p">.</span><span class="n">rgb</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>  </code></pre></div>
+
+<h4 id="led-matrix">LED Matrix</h4>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">NanoPlayBoard</span> <span class="n">board</span><span class="p">;</span>
+<span class="n">board</span><span class="p">.</span><span class="n">ledmatrix</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;H o l a  m u n d o!&quot;</span><span class="p">);</span></code></pre></div>
+
+<p>La librería también nos permite controlar la velocidad del scroll utilizada para visualizar el texto en la matriz de leds.</p>
+
+<div class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="n">board</span><span class="p">.</span><span class="n">ledmatrix</span><span class="p">.</span><span class="n">setScrollSpeed</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">board</span><span class="p">.</span><span class="n">ledmatrix</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;H o l a  m u n d o!&quot;</span><span class="p">);</span></code></pre></div>
+
 
 
       <footer class="site-footer">
