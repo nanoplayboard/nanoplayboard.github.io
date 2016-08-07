@@ -1,0 +1,19 @@
+# Setup
+title:        NanoPlayBoard
+tagline:      Experimental and Educational Shield for Arduino Nano
+baseurl:      ""
+paginate:     1
+
+# About/contact
+authors:
+  - name:       Antonio Morales
+    url:        http://twitter.com/antonio1010mr
+  - name:       José Juan Sánchez
+    url:        http://josejuansanchez.org
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
