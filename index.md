@@ -5,6 +5,8 @@ title: {{ site.name }}
 
 ![](resources/images/completa_cara_superior.png){: .center}
 
+<a name="Placa_NanoPlayBoard"></a>
+
 ## **¿Qué es la Arduino NanoPlayBoard**?
 
 Es una placa de **iniciación a la experimentación** que permite el **aprendizaje de electrónica básica y programación** haciendo uso del microcontrolador [Arduino Nano 3.x][1] o compatibles.
@@ -38,6 +40,8 @@ La placa **Arduino Nano Play Board** es **[Hardware de Fuentes Abiertas (OSHW)][
 ![](resources/images/cara_inferior_new.png){: .center}
 
 ---
+
+<a name="Libreria_Arduino"></a>
 
 ## **Librería para la Arduino NanoPlayBoard**
 
@@ -97,6 +101,8 @@ board.ledmatrix.print("H o l a  m u n d o!");
 {% endhighlight %}
 
 ---
+
+<a name="Aplicacion_Android"></a>
 
 ## **Android App para la Arduino NanoPlayBoard**
 
