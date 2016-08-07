@@ -5,7 +5,7 @@ title: {{ site.name }}
 
 ![](resources/images/completa_cara_superior.png){: .center}
 
-## ¿Qué es la **Arduino NanoPlayBoard**?
+## **¿Qué es la Arduino NanoPlayBoard**?
 
 Es una placa de **iniciación a la experimentación** que permite el **aprendizaje de electrónica básica y programación** haciendo uso del microcontrolador [Arduino Nano 3.x][1] o compatibles.
 
@@ -39,7 +39,7 @@ La placa **Arduino Nano Play Board** es **[Hardware de Fuentes Abiertas (OSHW)][
 
 ---
 
-## Librería para la **Arduino NanoPlayBoard**
+## **Librería para la Arduino NanoPlayBoard**
 
 Hemos desarrollado una **librería para facilitar el uso y el acceso a los recursos** que ofrece la placa.
 
@@ -98,15 +98,36 @@ board.ledmatrix.print("H o l a  m u n d o!");
 
 ---
 
+## **Android App para la Arduino NanoPlayBoard**
+
+Hemos desarrollado una **aplicación Android** que nos permite interaccionar con la placa.
+
+![](resources/images/bluetooth_beach.jpg){: .center}
+
+### ¿Qué necesito para utilizar la app?
+
+* Una placa [Arduino Nano Play Board][2].
+* Un [Arduino Nano][1].
+* Un dispositivo Android (version >= 4.1.x).
+
+Y al menos _una de estas dos opciones_:
+
+  * Un **módulo Bluetooth** compatible con Arduino (HC-05 o HC-06).
+  * Un **cable USB OTG**.
+
+---
+
 ## Créditos
 
-* La placa [Arduino Nano Play Board][2] ha sido diseñada por [Antonio Morales][6].
-* La [librería para Arduino][5] ha sido desarrollada por [Antonio Morales][6] y [José Juan Sánchez][7].
+* La placa [Arduino Nano Play Board][2] ha sido diseñada por [Antonio Morales][7].
+* La [librería para Arduino][5] ha sido desarrollada por [Antonio Morales][7] y [José Juan Sánchez][8].
+* La [aplicación Android][6] ha sido desarrollada por [José Juan Sánchez][8].
 
 [1]: http://www.arduino.cc/en/Main/ArduinoBoardNano
 [2]: http://github.com/AntonioMR/Nano-Play-Board
 [3]: http://www.oshwa.org/definition/spanish/
 [4]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases
 [5]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library
-[6]: http://twitter.com/antonio1010mr
-[7]: http://josejuansanchez.org
+[6]: https://github.com/josejuansanchez/NanoPlayBoard-Android-App
+[7]: http://twitter.com/antonio1010mr
+[8]: http://josejuansanchez.org
