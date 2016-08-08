@@ -7,7 +7,7 @@ title: {{ site.name }}
 
 <a name="Placa_NanoPlayBoard"></a>
 
-## **¿Qué es la Arduino NanoPlayBoard**?
+## **¿Qué es la Arduino NanoPlayBoard?**
 
 Es una placa de **iniciación a la experimentación** que permite el **aprendizaje de electrónica básica y programación** haciendo uso del microcontrolador [Arduino Nano 3.x][1] o compatibles.
 
@@ -60,45 +60,45 @@ Hemos desarrollado una **librería para facilitar el uso y el acceso a los recur
 
 #### Potentiometer
 
-{% highlight c++ %}
+```c++
 NanoPlayBoard board;
 int value = board.potentiometer.read();
-{% endhighlight %}
+```
 
 #### LDR
 
-{% highlight c++ %}
+```c++
 NanoPlayBoard board;
 int value = board.ldr.read();
-{% endhighlight %}
+```
 
 #### Buzzer
 
-{% highlight c++ %}
+```c++
 NanoPlayBoard board;
 board.buzzer.playTone(440);
-{% endhighlight %}
+```
 
 #### LED RGB
 
-{% highlight c++ %}
+```c++
 NanoPlayBoard board;
 board.rgb.write(255, 0, 0);  
-{% endhighlight %}
+```
 
 #### LED Matrix
 
-{% highlight c++ %}
+```c++
 NanoPlayBoard board;
 board.ledmatrix.print("H o l a  m u n d o!");
-{% endhighlight %}
+```
 
 La librería también nos permite controlar la velocidad del scroll utilizada para visualizar el texto en la matriz de leds.
 
-{% highlight c++ %}
+```c++
 board.ledmatrix.setScrollSpeed(10);
 board.ledmatrix.print("H o l a  m u n d o!");
-{% endhighlight %}
+```
 
 ---
 
