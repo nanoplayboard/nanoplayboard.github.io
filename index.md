@@ -5,7 +5,7 @@ title: {{ site.name }}
 
 ![](resources/images/completa_cara_superior.png){: .center}
 
-<a name="Placa_NanoPlayBoard"></a>
+<a name="Placa-NanoPlayBoard"></a>
 
 ## **¿Qué es la Arduino NanoPlayBoard?**
 
@@ -41,7 +41,7 @@ La placa **Arduino Nano Play Board** es **[Hardware de Fuentes Abiertas (OSHW)][
 
 ---
 
-<a name="Libreria_Arduino"></a>
+<a name="Libreria-Arduino"></a>
 
 ## **Librería para la Arduino NanoPlayBoard**
 
@@ -102,7 +102,7 @@ board.ledmatrix.print("H o l a  m u n d o!");
 
 ---
 
-<a name="Aplicacion_Android"></a>
+<a name="Aplicacion-Android"></a>
 
 ## **Android App para la Arduino NanoPlayBoard**
 
@@ -123,11 +123,30 @@ Y al menos _una de estas dos opciones_:
 
 ---
 
+<a name="Johnny-Five"></a>
+
+## **Programa tu NanoPlayBoard en Javascript con Johnny-Five**
+
+![](resources/images/nanoplayboard-dashboard-j5.gif){: .center}
+
+Gracias al framework **[Johnny-Five][8]** también **puedes programar tu NanoPlayBoard en Javascript**.
+
+En [GitHub][7] hemos publicado un **[repositorio con algunos ejemplos][7]**.
+
+### Primeros pasos
+
+* Instala [Node.js][9].
+* Configura tu **NanoPlayBoard** cargando el sketch [StandardFirmata][10] ([instrucciones adicionales][11]).
+* Instala [Johnny-Five][8]: `npm install johnny-five`
+* Ejecuta los ejemplos: `node blink.js`
+
+---
+
 ## Créditos
 
-* La placa [Arduino Nano Play Board][2] ha sido diseñada por [Antonio Morales][7].
-* La [librería para Arduino][5] ha sido desarrollada por [Antonio Morales][7] y [José Juan Sánchez][8].
-* La [aplicación Android][6] ha sido desarrollada por [José Juan Sánchez][8].
+* La placa [Arduino Nano Play Board][2] ha sido diseñada por [Antonio Morales][antonio].
+* La [librería para Arduino][5] ha sido desarrollada por [Antonio Morales][antonio] y [José Juan Sánchez][josejuan].
+* La [aplicación Android][6] ha sido desarrollada por [José Juan Sánchez][josejuan].
 
 [1]: http://www.arduino.cc/en/Main/ArduinoBoardNano
 [2]: http://github.com/AntonioMR/Nano-Play-Board
@@ -135,5 +154,12 @@ Y al menos _una de estas dos opciones_:
 [4]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases
 [5]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library
 [6]: https://github.com/josejuansanchez/NanoPlayBoard-Android-App
-[7]: http://twitter.com/antonio1010mr
-[8]: http://josejuansanchez.org
+[7]: https://github.com/josejuansanchez/NanoPlayBoard-Johnny-Five
+[8]: http://johnny-five.io
+[9]: https://nodejs.org/download/
+[10]: https://github.com/firmata/arduino
+[11]: http://johnny-five.io/platform-support/#arduino-nano
+
+
+[antonio]: http://twitter.com/antonio1010mr
+[josejuan]: http://josejuansanchez.org
