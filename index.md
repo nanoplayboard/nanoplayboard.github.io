@@ -121,6 +121,15 @@ Y al menos _una de estas dos opciones_:
   * Un **módulo Bluetooth** compatible con Arduino (HC-05 o HC-06).
   * Un **cable USB OTG**.
 
+### Screenshots
+
+![Potentiometer](resources/screenshots/potentiometer.png)
+![LDR](resources/screenshots/ldr.png)
+![RGB LED](resources/screenshots/rgb_led.png)
+![Buzzer](resources/screenshots/buzzer.png)
+![Led Matrix](resources/screenshots/ledmatrix.png)
+![Led Matrix Pattern](resources/screenshots/ledmatrix_pattern.png)
+
 ---
 
 <a name="Johnny-Five"></a>
