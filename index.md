@@ -136,18 +136,38 @@ Y al menos _una de estas dos opciones_:
 
 ## **Programa tu NanoPlayBoard en Javascript con Johnny-Five**
 
-![](resources/images/nanoplayboard-dashboard-j5.gif){: .center}
-
 Gracias al framework **[Johnny-Five][8]** también **puedes programar tu NanoPlayBoard en Javascript**.
 
 En [GitHub][7] hemos publicado un **[repositorio con algunos ejemplos][7]**.
+
+En el siguiente ejemplo puedes ver cómo encencer un led RGB y hacerlo parpadear.
+
+```javascript
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led.RGB([9,10,11]);
+  led.on();
+  led.color("#FF0000");
+  led.blink(1000);
+});
+```
 
 ### Primeros pasos
 
 * Instala [Node.js][9].
 * Configura tu **NanoPlayBoard** cargando el sketch [StandardFirmata][10] ([instrucciones adicionales][11]).
 * Instala [Johnny-Five][8]: `npm install johnny-five`
-* Ejecuta los ejemplos: `node blink.js`
+* Ejecuta los ejemplos del [repositorio][7]: `node blink.js`
+
+### Dashboard
+
+En el [repositorio que contiene los ejemplos][7] también hemos incluido un
+sencillo **dashboard** que te permite **interaccionar con tu NanoPlayBoard
+desde un navegador web**, gracias a [Socket.io][12], [Express][13] y [Johnny-Five][8].
+
+![](resources/images/nanoplayboard-dashboard-j5.gif){: .center}
 
 ---
 
@@ -162,13 +182,14 @@ En [GitHub][7] hemos publicado un **[repositorio con algunos ejemplos][7]**.
 [3]: http://www.oshwa.org/definition/spanish/
 [4]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/releases
 [5]: http://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library
-[6]: https://github.com/josejuansanchez/NanoPlayBoard-Android-App
-[7]: https://github.com/josejuansanchez/NanoPlayBoard-Johnny-Five
+[6]: http://github.com/josejuansanchez/NanoPlayBoard-Android-App
+[7]: http://github.com/josejuansanchez/NanoPlayBoard-Johnny-Five
 [8]: http://johnny-five.io
-[9]: https://nodejs.org/download/
-[10]: https://github.com/firmata/arduino
+[9]: http://nodejs.org/download/
+[10]: http://github.com/firmata/arduino
 [11]: http://johnny-five.io/platform-support/#arduino-nano
-
+[12]: http://socket.io
+[13]: http://expressjs.com
 
 [antonio]: http://twitter.com/antonio1010mr
 [josejuan]: http://josejuansanchez.org
