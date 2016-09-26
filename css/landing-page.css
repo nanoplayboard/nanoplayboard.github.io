@@ -88,6 +88,11 @@ h6 {
     }
 }
 
+.intro-header .post-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -106,6 +111,13 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-post {
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+
 .section-heading {
     margin-bottom: 30px;
 }
@@ -119,11 +131,6 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    /*background: url(../img/banner-bg.jpg) no-repeat center center;*/
-    /*background: linear-gradient(
-      rgba(0, 0, 0, 0.60), 
-      rgba(0, 0, 0, 0.60)
-    ), url(../resources/images/header-bg.png) no-repeat center center;*/
     background-size: cover;
 }
 

@@ -3,6 +3,7 @@ title:        NanoPlayBoard
 tagline:      Experimental and Educational Shield for Arduino Nano
 baseurl:      ""
 paginate:     1
+permalink:    none
 
 # About/contact
 authors:
