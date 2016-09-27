@@ -2,7 +2,7 @@
 layout: examples
 title-list:  "read"
 title:  "Potentiometer - read"
-subtitle: "How to send potentiometer values through Bluetooth"
+subtitle: "How to send potentiometer values through <i>Bluetooth</i>"
 date:   2016-09-27 00:01:00
 author: "José Juan Sánchez"
 categories: [examples, potentiometer]

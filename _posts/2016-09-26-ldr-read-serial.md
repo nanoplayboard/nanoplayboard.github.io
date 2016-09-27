@@ -2,7 +2,7 @@
 layout: examples
 title-list:  "read"
 title:  "LDR - read"
-subtitle: "How to send LDR values through serial port"
+subtitle: "How to send LDR values through <i>serial port</i>"
 date:   2016-09-26 00:00:00
 author: "José Juan Sánchez"
 categories: [examples, ldr]

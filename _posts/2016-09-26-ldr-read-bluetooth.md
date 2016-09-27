@@ -2,7 +2,7 @@
 layout: examples
 title-list:  "read"
 title:  "LDR - read"
-subtitle: "How to send LDR values through Bluetooth"
+subtitle: "How to send LDR values through <i>Bluetooth</i>"
 date:   2016-09-26 00:01:00
 author: "José Juan Sánchez"
 categories: [examples, ldr]
