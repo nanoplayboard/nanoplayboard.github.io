@@ -4,7 +4,7 @@ title:  "Examples"
 ---
 
 <!-- Potentiometer -->
-<h2>Potentiometer</h2>
+<h2>&raquo; Potentiometer</h2>
 
 {% for post in site.categories.potentiometer reversed %}
 <div class="post-preview">
@@ -23,9 +23,47 @@ title:  "Examples"
 {% endfor %}
 
 <!-- LDR -->
-<h2 style="padding-top: 50px">LDR</h2>
+<h2 style="padding-top: 50px">&raquo; LDR</h2>
 
 {% for post in site.categories.ldr reversed %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-title">
+            {{ post.title-list }}
+        </h3>
+    </a>
+    {% if post.subtitle %}
+    <h4 class="post-subtitle">
+        {{ post.subtitle }}
+    </h4>
+    {% endif %}
+</div>
+<hr>
+{% endfor %}
+
+<!-- Buzzer -->
+<h2 style="padding-top: 50px">&raquo; Buzzer</h2>
+
+{% for post in site.categories.buzzer reversed %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-title">
+            {{ post.title-list }}
+        </h3>
+    </a>
+    {% if post.subtitle %}
+    <h4 class="post-subtitle">
+        {{ post.subtitle }}
+    </h4>
+    {% endif %}
+</div>
+<hr>
+{% endfor %}
+
+<!-- RGB LED -->
+<h2 style="padding-top: 50px">&raquo; RGB LED</h2>
+
+{% for post in site.categories.rgb reversed %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h3 class="post-title">
