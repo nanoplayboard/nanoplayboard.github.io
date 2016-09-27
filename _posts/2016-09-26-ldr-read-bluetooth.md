@@ -9,7 +9,7 @@ categories: [examples, ldr]
 header-img: "resources/images/header-bg.png"
 ---
 
-## read
+## Example
 This example shows how to read potentiometer values and send it through `Bluetooth`.
 
 ```c++
@@ -32,6 +32,6 @@ The source code of this example is [available on GiHub][1].
 </a>
 
 ## Video
-<iframe width="750" height="423"  src="https://www.youtube.com/embed/NiuZJAB38TI" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="423" src="https://www.youtube.com/embed/NiuZJAB38TI" frameborder="0" allowfullscreen></iframe>
 
 [1]: https://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/tree/master/examples
