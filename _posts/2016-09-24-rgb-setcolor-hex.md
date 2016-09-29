@@ -17,6 +17,10 @@ This example shows how to set the LED color using a HEX value.
 
 NanoPlayBoard board;
 
+void setup() {
+
+}
+
 void loop() {
   board.rgb.setColor("#FF0000");
   delay(1000);

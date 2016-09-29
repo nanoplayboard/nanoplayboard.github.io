@@ -17,6 +17,10 @@ This example shows how to toggle the current state of the LED.
 
 NanoPlayBoard board;
 
+void setup() {
+
+}
+
 void loop() {
   board.rgb.toggle();
   delay(1000);

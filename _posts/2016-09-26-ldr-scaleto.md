@@ -17,6 +17,10 @@ This example shows how to read LDR values and scale it to another range.
 
 NanoPlayBoard board;
 
+void setup() {
+
+}
+
 void loop() {
   int value = board.ldr.scaleTo(0, 99);
   board.ledmatrix.printInLandscape(value);

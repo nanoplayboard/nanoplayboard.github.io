@@ -17,6 +17,10 @@ This example shows how to read potentiometer values and scale it to another rang
 
 NanoPlayBoard board;
 
+void setup() {
+
+}
+
 void loop() {
   int value = board.potentiometer.scaleTo(0, 99);
   board.ledmatrix.printInLandscape(value);

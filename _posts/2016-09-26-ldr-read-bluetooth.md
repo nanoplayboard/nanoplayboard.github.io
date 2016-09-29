@@ -17,6 +17,10 @@ This example shows how to read potentiometer values and send it through `Bluetoo
 
 NanoPlayBoard board;
 
+void setup() {
+
+}
+
 void loop() {
   int value = board.ldr.read();
   board.bluetooth.println(value);
