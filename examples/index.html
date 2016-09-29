@@ -78,3 +78,22 @@ title:  "Examples"
 </div>
 <hr>
 {% endfor %}
+
+<!-- LED Matrix -->
+<h2 style="padding-top: 50px">&raquo; LED Matrix</h2>
+
+{% for post in site.categories.ledmatrix reversed %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-title">
+            {{ post.title-list }}
+        </h3>
+    </a>
+    {% if post.subtitle %}
+    <h4 class="post-subtitle">
+        {{ post.subtitle }}
+    </h4>
+    {% endif %}
+</div>
+<hr>
+{% endfor %}
