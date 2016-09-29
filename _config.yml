@@ -5,6 +5,9 @@ baseurl:      ""
 paginate:     1
 permalink:    none
 
+# Google Analytics
+google_tracking_id: UA-84933832-1
+
 # About/contact
 authors:
   - name:       Antonio Morales
