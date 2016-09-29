@@ -34,8 +34,11 @@ The `setScrollSpeed`method allows you to control the scroll speed that is used t
 
 NanoPlayBoard board;
 
-void loop() {
+void setup() {
   board.ledmatrix.setScrollSpeed(10);
+}
+
+void loop() {
   board.ledmatrix.print("H o l a  m u n d o!");
 }
 ```
