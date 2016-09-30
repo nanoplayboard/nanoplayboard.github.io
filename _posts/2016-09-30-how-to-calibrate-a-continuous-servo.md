@@ -18,7 +18,7 @@ This article shows you how to calibrate a continuous rotation servo using **Nano
 
 * NanoPlayBoard.
 * 9v battery.
-* Continous rotation servo.
+* Continuous rotation servo.
 * Screwdriver.
 
 ## Sketch
