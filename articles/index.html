@@ -1,0 +1,21 @@
+---
+layout: articles
+title:  "Articles"
+---
+
+{% for post in site.categories.articles reversed %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h3 class="post-title">
+            {{ post.title }}
+        </h3>
+    </a>
+        {% if post.subtitle %}
+        <h4 class="post-subtitle">
+            {{ post.subtitle }}
+        </h4>
+        {% endif %}
+    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}

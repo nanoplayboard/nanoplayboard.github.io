@@ -1,28 +1,36 @@
 ---
-layout: tutorials
-title:  "Cómo funciona un potenciómetro"
-subtitle: "Nivel: Intermedio"
-date:   2016-09-26 13:20:00
+layout: articles
+title:  "How to calibrate a continous servo using NanoPlayBoard"
+subtitle: ""
+date:   2016-09-30 00:00:00
 author: "José Juan Sánchez"
-categories: tutorials
+categories: articles
 header-img: "resources/images/header-bg.png"
 ---
 
-## Header 1
+## Sketch
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
 Jekyll also offers powerful support for code snippets:
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+```c++
+#include <NanoPlayBoard.h>
+
+NanoPlayBoard board;
+
+void setup() {
+
+}
+
+void loop() {
+  int value = board.potentiometer.scaleTo(0, 180);
+  board.ledmatrix.printInLandscape(value);
+  board.servo[1].to(value);
+}
 ```
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+The source code of this sketch is [available on GiHub][1].
 
 ## Header 2
 <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
@@ -39,5 +47,4 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
 
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+[1]: https://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library
