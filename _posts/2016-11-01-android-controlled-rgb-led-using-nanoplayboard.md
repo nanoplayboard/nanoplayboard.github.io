@@ -23,46 +23,29 @@ This article shows you how to control an RGB LED using an Android device, **Nano
 * Paper box (made with an A4 paper).
 
 ## Sketch
-Upload the sketch: [firmaware_bluetooth.ino][1] on the **NanoPlayBoard**:
+Upload this sketch on the **NanoPlayBoard**:
 
 ```c++
+// Expected JSON message: {"r": 120, "g": 2, "b": 34}
+
 #include <NanoPlayBoard.h>
+#include <ArduinoJson.h>
 
 NanoPlayBoard board;
 
 void setup() {
-  btSerial.begin(9600);
+  board.bluetooth.begin(9600);
 }
 
 void loop() {
-  btSerialEvent();
-  doMessageAction();
-}
+  if (board.bluetooth.available() <= 0) return;
 
-...
-```
-
-```c++
-void doMessageAction() {
-  switch(message_id) {
-    ...
-    case ID_RGB_SET_COLOR:
-      rgbSetColor();
-      break;
-    ...
-  }
-}
-```
-
-```c++
-void rgbSetColor() {
-  if (json.length() <= 0) return;
-
-  StaticJsonBuffer<200> json_buffer;
-  JsonObject& root = json_buffer.parseObject(json);
+  String json = board.bluetooth.readStringUntil('\n');
+  StaticJsonBuffer<200> jsonBuffer;
+  JsonObject& root = jsonBuffer.parseObject(json);
 
   if (!root.success()) {
-    btSerial.println("{\"error\": \"Error parsing json message\"}");
+    board.bluetooth.println("{\"error\": \"Error parsing json message\"}");
     return;
   }
 
