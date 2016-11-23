@@ -29,12 +29,4 @@ void loop() {
 
 The source code of this example is [available on GitHub][1].
 
-## Image
-<a href="#">
-    <img class="img-responsive" src="{{ site.baseurl }}/resources/images/bluetooth_beach.jpg" alt="Post Sample Image">
-</a>
-
-## Video
-<iframe width="100%" height="423" src="https://www.youtube.com/embed/NiuZJAB38TI" frameborder="0" allowfullscreen></iframe>
-
 [1]: https://github.com/josejuansanchez/NanoPlayBoard-Arduino-Library/tree/master/examples
