@@ -19,6 +19,8 @@ A big thanks to the organization of the event. We had a really great time there!
 
 ## Hardware Overview
 
+<script async class="speakerdeck-embed" data-id="4d24ecd418ae487687e6b5492c7b4393" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 ## Software Overview
 
 <script async class="speakerdeck-embed" data-id="3e4aa4b50f9b45f9b21ffd586afcc100" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
