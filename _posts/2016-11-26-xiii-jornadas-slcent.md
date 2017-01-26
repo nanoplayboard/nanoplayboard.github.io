@@ -11,7 +11,7 @@ This year we have been invited to take part in the **[XIII Jornadas SLCENT][1]**
 
 This was the first time that **NanoPlayBoard** has been presented in public and it was very exciting to share the project with students, teachers and the rest of the educational community.
 
-[Antonio Morales][5] explained how has been the creation process of the board from the hardware overview and [José Juan Sánchez][6] showed the different software resources that have been developed for the project in order make easy the use of the board.
+[Antonio Morales][5] explained how has been the creation process of the board from the hardware overview and [José Juan Sánchez][6] showed different software resources that have been developed for the project in order to make easy the use of the board.
 
 The slides used in the talks are available below.
 
