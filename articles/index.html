@@ -3,7 +3,7 @@ layout: articles
 title:  "Articles"
 ---
 
-{% for post in site.categories.articles reversed %}
+{% for post in site.categories.articles %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h3 class="post-title">
